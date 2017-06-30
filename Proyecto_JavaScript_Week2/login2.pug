@@ -1,0 +1,20 @@
+doctype html(lang='en')
+head
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  meta(http-equiv='x-ua-compatible', content='ie=edge')
+  title Registro | #{title}
+
+  body
+    h1 Log In
+    form(method='POST' action='/enterlogin')
+      div.form-group
+        label(for='usuario') Usuario: 
+        input.form-control(type='text' id='usuario' placeholder='Usuario' name='usuario')
+      div.form-group
+        label(for='password') Password: 
+        input.form-control(type='password' id='password' placeholder='Contraseña' name='password')
+      button.btn.btn-primary(type='submit') Log in   
+    
+    form(action='/registro')
+      button.btn.btn-primary(type='submit') Registro        

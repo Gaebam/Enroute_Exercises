@@ -1,0 +1,20 @@
+doctype html(lang='en')
+head
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  meta(http-equiv='x-ua-compatible', content='ie=edge')
+  title Registro | #{title}
+  
+  body
+    h1 Registrate
+    form(name="adduser", method='POST', action='/search')
+        div.form-group
+          label(for='name') Nombre:
+          input.form-control(type='text', placeholder='Nombre' name='name' id='name')      
+        div.form-group
+          label(for='user') Usuario:
+          input.form-control(type='text', placeholder='Usuario' name='user' id='user') 
+        div.form-group
+          label(for='password') Contraseña:
+          input.form-control(type='password' name='password' id='password')
+        button.btn.btn-primary(type='submit') Registrate 
